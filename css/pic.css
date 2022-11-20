@@ -1,0 +1,214 @@
+.cat {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    border: solid 4px red;
+}
+
+.cat * {
+    position: absolute;
+}
+
+.cat-body {
+    top: 20%;
+    left: 10%;
+    width: 160px;
+    height: 120px;
+    background: linear-gradient(-10deg, gray 20%, whitesmoke 100%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.cat-right-ear {
+    width: 20px;
+    height: 20px;
+    top: 26%;
+    left: 76%;
+    border-radius: 50%;
+    background: linear-gradient(
+            180deg,
+            gray,
+            gray 65%,
+            transparent 65%,
+            transparent 100%
+    ) no-repeat;
+    transform: rotate(32deg);
+    z-index: 2;
+}
+
+.cat-left-ear {
+    width: 20px;
+    height: 20px;
+    top: 26%;
+    left: 50%;
+    border-radius: 50%;
+    background: linear-gradient(
+            180deg,
+            gray,
+            gray 65%,
+            transparent 65%,
+            transparent 100%
+    ) no-repeat;
+    transform: rotate(-35deg);
+    z-index: 2;
+
+}
+
+.cat-inner-ear {
+    width: 10px;
+    height: 10px;
+    top: 35%;
+    left: 25%;
+    background: white;
+    border-radius: 50%;
+    background: linear-gradient(
+            180deg,
+            white,
+            white 65%,
+            transparent 65%,
+            transparent 100%
+    ) no-repeat;
+}
+
+.cat-head {
+    width: 80px;
+    height: 80px;
+    top: 28%;
+    left: 49%;
+    background: #6B6A69;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.cat-left-eye {
+    width: 18px;
+    height: 7px;
+    top: 37%;
+    left: 25%;
+    background: black;
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 1;
+}
+
+.cat-right-eye {
+    width: 18px;
+    height: 7px;
+    top: 37%;
+    left: 65%;
+    background: black;
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 1;
+}
+
+.cat-nose {
+    width: 0;
+    height: 0;
+    top: 45%;
+    left: 50%;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: black transparent transparent transparent;
+    z-index: 1;
+}
+
+.cat-mouth-left {
+    width: 8px;
+    height: 50px;
+    top: 31%;
+    left: 48%;
+    background: linear-gradient(
+            150deg,
+            transparent,
+            transparent 50%,
+            black 50%,
+            black 55%,
+            transparent 55%,
+            transparent 100%
+    ) no-repeat;
+    z-index: 2;
+
+}
+
+
+.cat-mouth-right {
+    width: 8px;
+    height: 50px;
+    top: 34%;
+    left: 55%;
+    background: linear-gradient(
+            35deg,
+            transparent,
+            transparent 50%,
+            black 50%,
+            black 55%,
+            transparent 55%,
+            transparent 100%
+    ) no-repeat;
+    z-index: 2;
+}
+
+.cat-left-back-leg {
+    width: 0;
+    height: 0;
+    top: 67%;
+    left: 17%;
+    border-style: solid;
+    border-width: 40px 14px 0 14px;
+    border-color: gray transparent transparent transparent;
+    z-index:-1;
+}
+
+
+.cat-right-back-leg {
+    width: 0;
+    height: 0;
+    top: 64%;
+    left: 20%;
+    border-style: solid;
+    border-width: 50px 10px 0 40px;
+    border-color: #6B6A69 transparent transparent transparent;
+    z-index: -1;
+}
+
+
+.cat-left-front-leg {
+    width: 0;
+    height: 0;
+    top: 67%;
+    left: 50%;
+    border-style: solid;
+    border-width: 50px 25px 0 30px;
+    border-color: gray transparent transparent transparent;
+    z-index: -1;
+}
+
+
+.cat-right-front-leg {
+    width: 0;
+    height: 0;
+    top: 70%;
+    left: 56%;
+    border-style: solid;
+    border-width: 40px 10px 0 30px;
+    border-color: #6B6A69 transparent transparent transparent;
+    z-index: -2;
+}
+
+.cat-tail {
+    top: 5%;
+    left: 8%;
+    width: 18px;
+    height: 100px;
+    background: linear-gradient(-10deg, gray 20%, whitesmoke 100%);
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+

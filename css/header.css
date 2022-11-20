@@ -1,0 +1,97 @@
+.container {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+    align-items: flex-end;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    color: darkblue;
+}
+
+
+/*.nav-items {
+    height: 120px;
+    background: whitesmoke;
+    box-shadow: 0px 2px black;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.nav-item {
+    position: relative;
+    border: black solid 1px;
+    list-style: none;
+    margin-right: auto;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    color: darkblue;
+}
+
+.nav-item:first-child {
+    position: inherit;
+    margin: auto auto auto auto;
+}*/
+
+
+
+/*
+nav {
+    height:120px;
+    background:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+}
+
+.nav-items{
+    background:red;
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+.header-item{
+    cursor: pointer;
+    border-left: 1px solid #fff;
+    margin: 0;
+}
+
+.header-item a{
+    text-decoration: none;
+    padding: 0 15px;
+    color: white;
+    line-height:50px;
+}
+
+.header-item li:hover{
+    background: grey;
+}*/
