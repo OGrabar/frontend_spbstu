@@ -1,25 +1,23 @@
 header {
     background-color: whitesmoke;
-    width: 100vw;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
+    flex-flow: column;
+    align-items: center;
 }
-
-
 
 nav {
     display: flex;
+
 }
 
 .nav-items {
     display: flex;
-    justify-content: space-between;
-    gap: 30%;
+    justify-content: space-around;
+    gap: 20%;
     list-style: none;
-    align-items: flex-end;
 }
 
 .nav-item * {
