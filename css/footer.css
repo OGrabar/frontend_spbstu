@@ -1,31 +1,24 @@
-header {
+footer {
     background-color: whitesmoke;
+    height: 10vh;
     width: 100vw;
-}
-
-.container {
     display: flex;
     justify-content: space-around;
 }
 
-nav {
+.footer-nav-items {
     display: flex;
-}
-
-.nav-items {
-    display: flex;
-    justify-content: space-between;
     gap: 30%;
     list-style: none;
-    align-items: flex-end;
+    justify-content: center;
 }
 
-.nav-item a {
+.footer-nav-item a {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
 
-.nav-item a:hover {
+.footer-nav-item a:hover {
     color: darkblue;
 }

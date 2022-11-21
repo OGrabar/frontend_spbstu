@@ -19,7 +19,7 @@
     height: 120px;
     background: linear-gradient(-10deg, gray 20%, whitesmoke 100%);
     border-radius: 50%;
-    z-index: 0;
+    z-index: 3;
 }
 
 .cat-right-ear {
@@ -36,7 +36,7 @@
             transparent 100%
     ) no-repeat;
     transform: rotate(32deg);
-    z-index: 2;
+    z-index: 4;
 }
 
 .cat-left-ear {
@@ -53,7 +53,7 @@
             transparent 100%
     ) no-repeat;
     transform: rotate(-35deg);
-    z-index: 2;
+    z-index: 4;
 
 }
 
@@ -71,6 +71,7 @@
             transparent 65%,
             transparent 100%
     ) no-repeat;
+    z-index: 4;
 }
 
 .cat-head {
@@ -80,7 +81,7 @@
     left: 49%;
     background: #6B6A69;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .cat-left-eye {
@@ -162,7 +163,7 @@
     border-style: solid;
     border-width: 40px 14px 0 14px;
     border-color: gray transparent transparent transparent;
-    z-index:-1;
+    z-index: 2;
 }
 
 
@@ -174,7 +175,7 @@
     border-style: solid;
     border-width: 50px 10px 0 40px;
     border-color: #6B6A69 transparent transparent transparent;
-    z-index: -1;
+    z-index: 2;
 }
 
 
@@ -186,7 +187,7 @@
     border-style: solid;
     border-width: 50px 25px 0 30px;
     border-color: gray transparent transparent transparent;
-    z-index: -1;
+    z-index: 2;
 }
 
 
@@ -198,7 +199,7 @@
     border-style: solid;
     border-width: 40px 10px 0 30px;
     border-color: #6B6A69 transparent transparent transparent;
-    z-index: -2;
+    z-index: 1;
 }
 
 .cat-tail {
@@ -208,7 +209,7 @@
     height: 100px;
     background: linear-gradient(-10deg, gray 20%, whitesmoke 100%);
     border-radius: 50%;
-    z-index: -1;
+    z-index: 1;
     transform: rotate(-10deg);
 }
 

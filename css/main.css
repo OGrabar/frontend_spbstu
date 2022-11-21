@@ -1,0 +1,13 @@
+.content {
+    width: 80%;
+    height: 100%;
+    background: white;
+    margin: auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+main {
+    background-color: white;
+    height: 80vh;
+}
