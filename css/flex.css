@@ -1,0 +1,135 @@
+
+.flex-gun {
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+}
+
+.gun-container * {
+    position: absolute;
+}
+
+.gun-container {
+    display: flex;
+    background-color: white;
+    border: solid 4px red;
+    width: 250px;
+    height: 250px;
+}
+
+.gun-container .text {
+    font-size: 20px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    visibility: hidden;
+    justify-self: center;
+}
+
+.gun-container .gun {
+    position: absolute;
+    border: crimson solid 1px;
+    transform: rotate(45deg);
+}
+
+.gun-container .fired-gun, .bullet {
+    visibility: hidden;
+}
+
+
+.gun-container:hover .gun {
+    position: absolute;
+    animation: rotation-animation 1s linear forwards;
+}
+
+.gun-container:hover .attention-text {
+    animation: text-apperance-animation 1s linear;
+    visibility: visible;
+}
+
+.gun-container:active .gun {
+    visibility: hidden;
+}
+
+.gun-container:active .fired-gun {
+    visibility: visible;
+}
+
+.gun-container:active .bullet {
+    left: -10%;
+}
+
+.gun-container:active .attention-text {
+    visibility: hidden;
+}
+
+.gun-container:active .fire-text {
+    animation: text-apperance-animation 1s linear;
+    visibility: visible;
+}
+
+.gun-container:active .bullet {
+    animation: bullet-fly-animation 2s linear;
+}
+
+
+.gun-container:active {
+    animation: shake-animation 1s 2s infinite linear;
+    visibility: visible;
+}
+
+@keyframes rotation-animation {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes text-apperance-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes bullet-fly-animation {
+    from {
+        transform: translateX(10px);
+        visibility: visible;
+    }
+    to {
+        transform: translateX(40px);
+        visibility: hidden;
+    }
+}
+
+@keyframes hidden-animation {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes shake-animation {
+    0% {
+        transform: translateY(10px)
+    }
+    25% {
+        transform: translateY(-10px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
+    75% {
+        transform: translateY(-10px)
+    }
+    100% {
+        transform: translateY(10px)
+    }
+}
