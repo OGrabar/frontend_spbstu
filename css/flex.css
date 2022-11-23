@@ -1,8 +1,7 @@
-
 .flex-gun {
-    position: absolute;
     display: flex;
     margin-top: 40px;
+    position: relative;
 }
 
 .gun-container * {
@@ -23,12 +22,9 @@
     left: 50%;
     transform: translate(-50%, 0%);
     visibility: hidden;
-    justify-self: center;
 }
 
 .gun-container .gun {
-    position: absolute;
-    border: crimson solid 1px;
     transform: rotate(45deg);
 }
 
@@ -38,12 +34,11 @@
 
 
 .gun-container:hover .gun {
-    position: absolute;
-    animation: rotation-animation 1s linear forwards;
+    animation: rotation-animation 0.5s linear forwards;
 }
 
 .gun-container:hover .attention-text {
-    animation: text-apperance-animation 1s linear;
+    animation: text-apperance-animation 0.5s linear;
     visibility: visible;
 }
 
@@ -64,17 +59,17 @@
 }
 
 .gun-container:active .fire-text {
-    animation: text-apperance-animation 1s linear;
+    animation: text-apperance-animation 0.5s linear;
     visibility: visible;
 }
 
 .gun-container:active .bullet {
-    animation: bullet-fly-animation 2s linear;
+    animation: bullet-fly-animation 0.5s linear;
 }
 
 
 .gun-container:active {
-    animation: shake-animation 1s 2s infinite linear;
+    animation: shake-animation 1s 0.5s infinite linear;
     visibility: visible;
 }
 

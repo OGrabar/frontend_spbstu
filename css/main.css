@@ -5,6 +5,10 @@
     margin: auto;
     border-right: 1px solid black;
     border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 main {
