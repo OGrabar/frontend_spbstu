@@ -18,7 +18,7 @@ nav {
     justify-content: space-around;
     gap: 20%;
     list-style: none;
-    transform: translate(-10%, 0%);
+    transform: translate(-7%, 0%);
 }
 
 .nav-item * {

@@ -26,7 +26,9 @@
                 <li class="nav-item dropdown">
                     <button class="dropbtn">Tasks</button>
                     <div class="dropdown-content">
-                        <a href="#task1">Task 1</a>
+                        <a href="#dom-task">DOM</a>
+                        <a href="#picture-task">Picture</a>
+                        <a href="#animation-task">Animation</a>
                     </div>
                 </li>
                 <li class="nav-item"><a href="https://dl.spbstu.ru/course/view.php?id=3490">Course</a></li>
@@ -36,8 +38,69 @@
     </div>
 </header>
 <main>
+    <script>
+        const latinPhrases = [
+            'Consuetudo est altera natura',
+            "Nota bene",
+            'Nulla calamitas sola',
+            'Per aspera ad astra',
+        ];
+        const russianPhrases = [
+            'Привычка - вторая натура',
+            'Заметье хорошо!',
+            'Беда не приходит одна',
+            'Через тернии к звездам',
+        ];
+
+        function noMorePhrases() {
+            alert('No more phrases!');
+        }
+
+        function changeEvenRowsFontStyle() {
+            document.querySelectorAll('.even-row-class').forEach(row => {
+                row.style.fontWeight = 'bold';
+            });
+        }
+
+        function addTableRow() {
+            if (russianPhrases.length === 0) {
+                noMorePhrases();
+                return;
+            }
+
+            const tableBody = document.getElementById('lat-ru-table-body-id');
+            console.log(tableBody)
+            const tableRow = tableBody.insertRow();
+            if (tableBody.rows.length % 2 === 0) {
+                tableRow.classList.add('even-row-class');
+            } else {
+                tableRow.classList.add('odd-row-class');
+            }
+
+            const latinPhrase = latinPhrases.pop();
+            const latinCell = tableRow.insertCell();
+            latinCell.appendChild(document.createTextNode(latinPhrase));
+
+            const russianPhrase = russianPhrases.pop();
+            const russianCell = tableRow.insertCell();
+            russianCell.appendChild(document.createTextNode(russianPhrase));
+        }
+    </script>
     <div class="content">
-        <div id="task1" class="cat">
+        <div id="dom-task">
+            <table>
+                <thead>
+                <tr>
+                    <th>Russian</th>
+                    <th>Latin</th>
+                </tr>
+                </thead>
+                <tbody id="lat-ru-table-body-id"></tbody>
+            </table>
+            <button class="create_row", onclick="addTableRow()">Create row</button>
+            <button class="change_even_row_font", onclick="changeEvenRowsFontStyle()">Change font style</button>
+        </div>
+        <div id="picture-task" class="cat">
             <div class="cat-body"></div>
             <div class="cat-left-ear">
                 <div class="cat-inner-ear"></div>
@@ -58,7 +121,7 @@
             <div class="cat-right-front-leg"></div>
             <div class="cat-tail"></div>
         </div>
-        <div id="task2" class="flex-gun">
+        <div id="animation-task" class="flex-gun">
             <div class="gun-container">
                 <div class="text attention-text">Внимание...</div>
                 <div class="text fire-text">Огонь!!!</div>
@@ -66,14 +129,6 @@
                 <img class="bullet" src="img/gun5.png">
                 <img class="fired-gun" src="img/gun3.png">
             </div>
-        </div>
-        <div id="task3" class="lat-ru-table">
-            <table>
-                <thead>
-                <tr>Russian</tr>
-                <tr>Latin</tr>
-                </thead>
-            </table>
         </div>
     </div>
 </main>

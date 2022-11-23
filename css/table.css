@@ -1,0 +1,27 @@
+td, th {
+    border: 1px solid #777;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#dom-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.create_row {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.odd-row-class {
+    background-color: whitesmoke;
+}
+
+.even-row-class {
+    background-color: red;
+}
