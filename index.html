@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,
+user-scalable=no">
 <head>
     <meta charset="UTF-8">
     <link href="css/pic.css" rel="stylesheet">
@@ -38,56 +40,8 @@
     </div>
 </header>
 <main>
-    <script>
-        const latinPhrases = [
-            'Consuetudo est altera natura',
-            "Nota bene",
-            'Nulla calamitas sola',
-            'Per aspera ad astra',
-        ];
-        const russianPhrases = [
-            'Привычка - вторая натура',
-            'Заметье хорошо!',
-            'Беда не приходит одна',
-            'Через тернии к звездам',
-        ];
-
-        function noMorePhrases() {
-            alert('No more phrases!');
-        }
-
-        function changeEvenRowsFontStyle() {
-            document.querySelectorAll('.even-row-class').forEach(row => {
-                row.style.fontWeight = 'bold';
-            });
-        }
-
-        function addTableRow() {
-            if (russianPhrases.length === 0) {
-                noMorePhrases();
-                return;
-            }
-
-            const tableBody = document.getElementById('lat-ru-table-body-id');
-            console.log(tableBody)
-            const tableRow = tableBody.insertRow();
-            if (tableBody.rows.length % 2 === 0) {
-                tableRow.classList.add('even-row-class');
-            } else {
-                tableRow.classList.add('odd-row-class');
-            }
-
-            const latinPhrase = latinPhrases.pop();
-            const latinCell = tableRow.insertCell();
-            latinCell.appendChild(document.createTextNode(latinPhrase));
-
-            const russianPhrase = russianPhrases.pop();
-            const russianCell = tableRow.insertCell();
-            russianCell.appendChild(document.createTextNode(russianPhrase));
-        }
-    </script>
     <div class="content">
-        <div id="dom-task">
+        <div class="task" id="dom-task">
             <table>
                 <thead>
                 <tr>
@@ -100,7 +54,7 @@
             <button class="create_row", onclick="addTableRow()">Create row</button>
             <button class="change_even_row_font", onclick="changeEvenRowsFontStyle()">Change font style</button>
         </div>
-        <div id="picture-task" class="cat">
+        <div id="picture-task" class="cat task">
             <div class="cat-body"></div>
             <div class="cat-left-ear">
                 <div class="cat-inner-ear"></div>
@@ -121,7 +75,7 @@
             <div class="cat-right-front-leg"></div>
             <div class="cat-tail"></div>
         </div>
-        <div id="animation-task" class="flex-gun">
+        <div id="animation-task" class="flex-gun task">
             <div class="gun-container">
                 <div class="text attention-text">Внимание...</div>
                 <div class="text fire-text">Огонь!!!</div>
@@ -139,4 +93,5 @@
     </ul>
 </footer>
 </body>
+<script type="text/javascript" src="scripts/table.js"></script>
 </html>
