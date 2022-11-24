@@ -36,11 +36,16 @@ function addTableRow() {
         tableRow.classList.add('odd-row-class');
     }
 
-    const latinPhrase = latinPhrases.pop();
+    const index = Math.floor(Math.random() * russianPhrases.length);
+
+
+    const latinPhrase = latinPhrases[index];
     const latinCell = tableRow.insertCell();
     latinCell.appendChild(document.createTextNode(latinPhrase));
+    latinPhrases.splice(index, 1);
 
-    const russianPhrase = russianPhrases.pop();
+    const russianPhrase = russianPhrases[index];
     const russianCell = tableRow.insertCell();
     russianCell.appendChild(document.createTextNode(russianPhrase));
+    russianPhrases.splice(index, 1);
 }

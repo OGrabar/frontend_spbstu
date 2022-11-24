@@ -14,11 +14,14 @@ table {
     align-items: center;
 }
 
-#dom-task button {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.table-buttons {
+    display: flex;
+}
+
+.table-buttons button {
+    margin: 10px 5px 10px 10px;
     font-size: 15px;
-    width: 80px;
+    width: 120px;
 }
 
 .odd-row-class {
@@ -26,5 +29,5 @@ table {
 }
 
 .even-row-class {
-    background-color: red;
+    background-color: wheat;
 }
