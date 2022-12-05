@@ -3,15 +3,20 @@ footer {
     height: 10vh;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .footer-nav-items {
-    display: flex;
-    gap: 30%;
+    min-width: 300px;
     list-style: none;
+    display: flex;
     justify-content: center;
-    transform: translateX(-50%, 0);
+    transform: translateX(-10px);
+}
+
+.footer-nav-item {
+    list-style: none;
+    margin-right: 20px;
 }
 
 .footer-nav-item a {
