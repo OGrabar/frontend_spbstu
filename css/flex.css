@@ -1,7 +1,13 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
 .flex-gun {
     display: flex;
     margin-top: 40px;
     position: relative;
+    transform: scale(0.5);
 }
 
 .gun-container * {

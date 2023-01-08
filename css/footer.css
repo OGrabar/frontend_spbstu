@@ -4,6 +4,7 @@ footer {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .footer-nav-items {
@@ -11,7 +12,6 @@ footer {
     list-style: none;
     display: flex;
     justify-content: center;
-    transform: translateX(-10px);
 }
 
 .footer-nav-item {
